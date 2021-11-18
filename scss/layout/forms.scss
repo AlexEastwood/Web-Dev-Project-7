@@ -1,0 +1,19 @@
+.forms div {
+    height: 150px;
+}
+
+.message-user {
+    background-color: red;
+    width: 100%;
+}
+.settings {
+    background-color: green;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .message-user,
+    .settings {
+        width: 50%;
+    }
+}

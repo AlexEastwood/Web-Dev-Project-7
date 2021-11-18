@@ -1,0 +1,23 @@
+.socials div {
+    height: 150px;
+}
+
+.social-stats {
+    background-color: red;
+    width: 100%;
+}
+.new-members {
+    background-color: green;
+    width: 100%;
+}
+.recent-activity {
+    background-color: blue;
+    width: 100%;
+}
+
+@media screen and (min-width: 1024px) {
+    .new-members,
+    .recent-activity {
+        width: 50%;
+    }
+}
