@@ -7,8 +7,8 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/output.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500&display=swap" rel="stylesheet"> 
 </head>
 <body>
     <header>
@@ -48,11 +48,20 @@
     </nav>
     <main>
         <div class="tabs">
-            <div class="tab"></div>
+            <div class="tab">Dashboard</div>
             <div class="tabs-remainder"></div>
         </div>
         <section class="charts">
-            <div class="line-container"><canvas id="trafficChart"></canvas></div>
+            <div class="line-container">
+                <div class="traffic-title">TRAFFIC</div>
+                <div class="timeframes">
+                    <div class="timeframe">Hourly</div>
+                    <div class="timeframe">Daily</div>
+                    <div class="timeframe">Weekly</div>
+                    <div class="timeframe">Monthly</div>
+                </div>
+                <canvas id="trafficChart"></canvas>
+            </div>
             <div class="bar-container"></div>
             <div class="donut-container"></div>
         </section>

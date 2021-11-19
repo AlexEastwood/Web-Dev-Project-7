@@ -397,7 +397,7 @@ th {
 }
 
 * {
-  font-family: "Open Sans", sans-serif;
+  font-family: "Montserrat", sans-serif;
 }
 
 * {
@@ -419,13 +419,16 @@ header {
 }
 header span {
   color: white;
-  margin: 0px 10px;
 }
 header span:first-of-type {
   font-size: 1.3em;
+  margin: 0px 10px;
+}
+header span:last-of-type {
+  font-size: 0.5em;
 }
 header .bell-container {
-  height: 40%;
+  height: 30%;
   width: auto;
   margin-left: auto;
   position: relative;
@@ -443,13 +446,13 @@ header .bell-container .notification {
   background: #66FF00;
 }
 header .vertical-line {
-  height: 70%;
+  height: 50%;
   width: 1px;
   background-color: lightgray;
-  margin: 0px 15px;
+  margin: 0px 10px;
 }
 header img {
-  height: 70%;
+  height: 60%;
   border-radius: 50%;
 }
 
@@ -498,6 +501,7 @@ section {
   text-align: center;
   vertical-align: middle;
   line-height: 60px;
+  font-weight: 500;
 }
 
 .tabs-remainder {
@@ -524,9 +528,15 @@ section {
     margin: 10px;
   }
 }
-.charts div {
+.charts {
   height: auto;
+}
+.charts [class*=-container] {
   padding: 0px 20px;
+  border-bottom: 1px solid lightgray;
+}
+.charts [class*=-title] {
+  font-weight: 500;
 }
 
 .line-container {
@@ -534,13 +544,28 @@ section {
 }
 
 .bar-container {
-  background-color: green;
   width: 100%;
 }
 
 .donut-container {
   background-color: blue;
   width: 100%;
+}
+
+.timeframes {
+  margin: 5px 0px 20px 0px;
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+}
+
+.timeframe {
+  width: 75px;
+  color: white;
+  background-color: #81c98f;
+  border-radius: 15px;
+  padding: 5px;
+  text-align: center;
 }
 
 @media screen and (min-width: 768px) {

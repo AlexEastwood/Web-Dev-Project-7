@@ -22,15 +22,19 @@ header {
 
     span {
         color: white;
-        margin: 0px 10px;
     }
 
     span:first-of-type {
         font-size: 1.3em;
+        margin: 0px 10px;
+    }
+
+    span:last-of-type {
+        font-size: 0.5em;
     }
 
     .bell-container {
-        height: 40%;
+        height: 30%;
         width: auto;
         margin-left: auto;
         position: relative;
@@ -50,14 +54,14 @@ header {
     }
 
     .vertical-line {
-        height: 70%;
+        height: 50%;
         width: 1px;
         background-color: lightgray;
-        margin: 0px 15px;
+        margin: 0px 10px;
     }
 
     img {
-        height: 70%;
+        height: 60%;
         border-radius: 50%;
     }
 }
@@ -106,6 +110,7 @@ section {
     text-align: center;
     vertical-align: middle;
     line-height: 60px; 
+    font-weight: 500;
 }
 .tabs-remainder {
     width: 100%;
