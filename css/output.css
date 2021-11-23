@@ -532,7 +532,6 @@ section {
   height: auto;
 }
 .charts [class*=-container] {
-  padding: 0px 15px;
   border-bottom: 1px solid lightgray;
 }
 .charts [class*=-title] {
@@ -540,7 +539,9 @@ section {
 }
 
 .line-container {
+  height: auto;
   width: 100%;
+  position: relative;
 }
 
 .bar-container {
@@ -566,6 +567,11 @@ section {
   border-radius: 15px;
   padding: 5px;
   text-align: center;
+}
+
+.line-chart {
+  width: 90vw;
+  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
