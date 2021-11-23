@@ -425,7 +425,8 @@ header span:first-of-type {
   margin: 0px 10px;
 }
 header span:last-of-type {
-  font-size: 0.5em;
+  font-size: 0.6em;
+  margin: 0 10px;
 }
 header .bell-container {
   height: 30%;
@@ -536,12 +537,17 @@ section {
 }
 .charts [class*=-title] {
   font-weight: 500;
+  margin-left: 10px;
+  margin-top: 15PX;
+}
+.charts [class*=-chart] {
+  width: 90%;
+  margin: auto;
 }
 
 .line-container {
   height: auto;
   width: 100%;
-  position: relative;
 }
 
 .bar-container {
@@ -554,24 +560,20 @@ section {
 }
 
 .timeframes {
-  margin: 5px 0px 20px 0px;
+  margin: 5px 0px 10px 0px;
   display: flex;
   width: 100%;
   justify-content: space-around;
+  font-size: 0.8rem;
 }
 
 .timeframe {
-  width: 75px;
+  width: 65px;
   color: white;
   background-color: #81c98f;
   border-radius: 15px;
   padding: 5px;
   text-align: center;
-}
-
-.line-chart {
-  width: 90vw;
-  margin: auto;
 }
 
 @media screen and (min-width: 768px) {
