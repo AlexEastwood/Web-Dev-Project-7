@@ -13,7 +13,6 @@ let trafficData = {
 
 let trafficOptions = {
     aspectRatio: 2.5,
-    maintainAspectRatio: true,
     scales: {
         y: {
             beginAtZero: true
@@ -23,8 +22,7 @@ let trafficOptions = {
         legend: {
         display: false
         }
-    },
-    responsive: true
+    }
 };
 
 let trafficChart = new Chart(trafficChartID, {
