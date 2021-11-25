@@ -400,8 +400,12 @@ th {
   font-family: "Montserrat", sans-serif;
 }
 
-* {
+html {
   box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
 }
 
 body {
@@ -533,20 +537,17 @@ section {
   height: auto;
 }
 .charts [class*=-container] {
-  border-bottom: 1px solid lightgray;
+  padding: 15px;
 }
 .charts [class*=-title] {
   font-weight: 500;
-  margin-left: 10px;
   margin-top: 15PX;
 }
 .charts [class*=-chart] {
-  width: 90%;
-  margin: auto;
+  width: 100%;
 }
 
 .line-container {
-  height: auto;
   width: 100%;
 }
 
@@ -555,7 +556,6 @@ section {
 }
 
 .donut-container {
-  background-color: blue;
   width: 100%;
 }
 
@@ -577,9 +577,23 @@ section {
 }
 
 @media screen and (min-width: 768px) {
+  .line-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
   .bar-container,
 .donut-container {
     width: 50%;
+  }
+
+  .bar-container {
+    border-right: 1px solid lightgray;
+  }
+
+  .timeframes {
+    width: auto;
+    margin-left: auto;
   }
 }
 .socials div {

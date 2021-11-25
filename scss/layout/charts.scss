@@ -2,32 +2,29 @@
     height: auto;
 
     [class*="-container"] {
-        border-bottom: 1px solid lightgray;
+        padding: 15px;
     }
 
     [class*="-title"] {
         font-weight: 500;
-        margin-left: 10px;
         margin-top: 15PX;
     }
 
     [class*="-chart"] {
-        width: 90%;
-        margin: auto;
+        width: 100%;
     }
 }
 
 .line-container {
-    height: auto;
     width: 100%;
 }
 .bar-container {
     width: 100%;
 }
 .donut-container {
-    background-color: blue;
     width: 100%;
 }
+
 
 .timeframes {
     margin: 5px 0px 10px 0px;
@@ -47,8 +44,22 @@
 }
 
 @media screen and (min-width: 768px) {
+    .line-container {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
     .bar-container,
     .donut-container {
         width: 50%;
+    }
+
+    .bar-container {
+        border-right: $border-style;
+    }
+
+    .timeframes {
+        width: auto;
+        margin-left: auto;
     }
 }

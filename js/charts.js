@@ -1,5 +1,6 @@
 const trafficChartID = document.getElementById('trafficChart');
 const dailyTrafficChartID = document.getElementById('dailyTrafficChart');
+const mobileUsersChartID = document.getElementById('mobileUsersChart');
 
 let trafficData = {
     labels: ["16-22", "23-29", "30-5", "6-12", "13-19", "20-26", "27-3", "4-10", "11-17", "18-24", "25-31"],
@@ -20,18 +21,17 @@ let dailyTrafficData = {
     }]
 }
 
-let trafficOptions = {
-    aspectRatio: 2.5,
-    scales: {
-        y: {
-            beginAtZero: true
-        }
-    },
-    plugins: {
-        legend: {
-        display: false
-        }
-    }
+let mobileUsersData = {
+    labels: ["Desktop", "Tablet", "Phones"],
+    datasets: [{
+        data: [60, 21, 19],
+        backgroundColor: [
+            "rgba(116,119,191,255)",
+            "rgba(129,201,143,255)",
+            "rgba(81,182,200,255)"
+        ],
+        borderWidth: 0,
+}]
 };
 
 let trafficChart = new Chart(trafficChartID, {
@@ -39,9 +39,10 @@ let trafficChart = new Chart(trafficChartID, {
     data: trafficData,
     options: {
         aspectRatio: 2.5,
+        maintainAspectRatio: false,
         scales: {
             y: {
-                beginAtZero: true
+                beginAtZero: true,
             }
         },
         plugins: {
@@ -56,10 +57,26 @@ let dailyTrafficChart = new Chart(dailyTrafficChartID, {
     type: 'bar',
     data: dailyTrafficData,
     options: {
-        aspectRatio: 2.5,
+        aspectRatio: 2,
         plugins: {
             legend: {
             display: false
+            }
+        }
+    }
+});
+
+let mobileUsersChart = new Chart(mobileUsersChartID, {
+    type: 'doughnut',
+    data: mobileUsersData,
+    options: {
+        aspectRatio: 2,
+        plugins: {
+            legend: {
+            position: "right",
+            labels: {
+                boxWidth: 20,
+                }
             }
         }
     }
