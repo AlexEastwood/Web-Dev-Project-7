@@ -39,8 +39,8 @@ let trafficChart = new Chart(trafficChartID, {
     data: trafficData,
     options: {
         responsive: true,
-        aspectRatio: 2.5,
-        maintainAspectRatio: false,
+        aspectRatio: 2.4,
+        maintainAspectRatio: true,
         scales: {
             y: {
                 beginAtZero: true,

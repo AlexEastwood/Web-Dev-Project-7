@@ -538,10 +538,11 @@ section {
 }
 .charts [class*=-container] {
   padding: 10px;
+  border-bottom: 1px solid lightgray;
 }
 .charts [class*=-title] {
   font-weight: 500;
-  margin-top: 15px;
+  margin: 15px 0;
 }
 .charts [class*=-chart] {
   max-width: 1000px;
@@ -565,6 +566,7 @@ section {
   display: flex;
   width: 100%;
   justify-content: space-around;
+  align-items: center;
   font-size: 0.8rem;
 }
 
@@ -595,6 +597,13 @@ section {
   .timeframes {
     width: auto;
     margin-left: auto;
+  }
+  .timeframes .timeframe {
+    margin-left: 5px;
+  }
+
+  .line-chart {
+    flex-basis: 100%;
   }
 }
 .socials div {
