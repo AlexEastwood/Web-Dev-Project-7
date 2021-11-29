@@ -38,6 +38,7 @@ let trafficChart = new Chart(trafficChartID, {
     type: 'line',
     data: trafficData,
     options: {
+        responsive: true,
         aspectRatio: 2.5,
         maintainAspectRatio: false,
         scales: {

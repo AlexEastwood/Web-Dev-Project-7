@@ -2,16 +2,17 @@
     height: auto;
 
     [class*="-container"] {
-        padding: 15px;
+        padding: 10px;
     }
 
     [class*="-title"] {
         font-weight: 500;
-        margin-top: 15PX;
+        margin-top: 15px;
     }
 
     [class*="-chart"] {
-        width: 100%;
+        max-width: 1000px;
+        position: relative;
     }
 }
 
