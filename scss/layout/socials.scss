@@ -1,3 +1,14 @@
+.socials {
+    & > div {
+        padding: 10px;
+        border-bottom: $border-style;
+    }
+
+    [class*="-title"] {
+        font-weight: 500;
+    }
+}
+
 .socials div {
     height: 150px;
 }

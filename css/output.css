@@ -606,6 +606,14 @@ section {
     flex-basis: 100%;
   }
 }
+.socials > div {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.socials [class*=-title] {
+  font-weight: 500;
+}
+
 .socials div {
   height: 150px;
 }
