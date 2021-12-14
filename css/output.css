@@ -612,6 +612,7 @@ section {
 }
 .socials [class*=-title] {
   font-weight: 500;
+  margin: 15px 0px;
 }
 
 .socials div {
