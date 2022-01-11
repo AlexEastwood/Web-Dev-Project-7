@@ -1,3 +1,12 @@
 $base-color: #7477bf;
 $nav-color: #4d4c72;
 $border-style: 1px solid lightgray;
+
+@mixin svg-base {
+    align-self: auto;
+    display: block;
+    margin: 0 auto;
+    height: 55%;
+    background-color: $base-color;
+    fill: white;
+}

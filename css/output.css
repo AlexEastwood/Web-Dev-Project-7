@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -493,6 +494,10 @@ section {
   flex-wrap: wrap;
 }
 
+br {
+  background-color: lightgrey;
+}
+
 .tabs {
   height: 60px;
   width: 100%;
@@ -615,6 +620,23 @@ section {
   margin: 15px 0px;
   align-self: flex-start;
 }
+.socials .social-logo-container {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #7477bf;
+  display: flex;
+  align-items: center;
+  margin: 15px 10px;
+}
+.socials svg {
+  align-self: auto;
+  display: block;
+  margin: 0 auto;
+  height: 55%;
+  background-color: #7477bf;
+  fill: white;
+}
 
 .social-stats {
   display: flex;
@@ -629,16 +651,50 @@ section {
   border: 1px solid lightgray;
   border-radius: 7px;
   margin: 5px 0px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.social-name {
+  color: #7477bf;
+  font-size: 0.8em;
+}
+
+.follower-count {
+  color: #777777;
+  font-size: 2em;
 }
 
 .new-members {
-  background-color: green;
   width: 100%;
+}
+.new-members .member-card > span:nth-of-type(2) {
+  color: #7477bf;
 }
 
 .recent-activity {
-  background-color: blue;
   width: 100%;
+}
+
+.member-card {
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px 0px;
+}
+.member-card img {
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+}
+.member-card span {
+  font-size: 0.7em;
+  text-align: center;
+}
+.member-card:not(:last-child) {
+  border-bottom: 1px solid lightgray;
 }
 
 @media screen and (min-width: 1024px) {
@@ -647,18 +703,95 @@ section {
     width: 50%;
   }
 }
-.forms div {
-  height: 150px;
+.forms {
+  font-size: 0.8rem;
+}
+.forms > div {
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+.forms [class*=-title] {
+  font-weight: 500;
+  margin: 15px 0px;
+  align-self: flex-start;
+}
+.forms input {
+  height: 40px;
 }
 
 .message-user {
-  background-color: red;
+  display: flex;
+  flex-direction: column;
   width: 100%;
+}
+.message-user textarea {
+  height: 120px;
+}
+.message-user input[type=submit] {
+  width: 100%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: #7477bf;
+  color: white;
+}
+.message-user input[type=text],
+.message-user textarea {
+  border: 1px solid lightgray;
+  width: 100%;
+  border-radius: 5px;
+  background-color: #f5f5f5;
+  margin-bottom: 15px;
+  padding: 5px;
+}
+.message-user input[type=text]::placeholder,
+.message-user textarea::placeholder {
+  color: #bcbcbc;
 }
 
 .settings {
-  background-color: green;
   width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.settings select {
+  width: 100%;
+  height: 40px;
+  padding: 5px;
+  color: #bcbcbc;
+  content: "▼";
+}
+.settings .setting-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+}
+.settings .button-container {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+.settings input[type=submit] {
+  width: 45%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: #7477bf;
+  color: white;
+}
+.settings input[type=button] {
+  width: 45%;
+  border: 1px solid lightgray;
+  border-radius: 5px;
+  background-color: grey;
+  color: white;
+}
+
+.slider-background {
+  height: 30px;
+  width: 90px;
+  background-color: #7477bf;
+  border: 1px solid lightgray;
+  border-radius: 15px;
 }
 
 @media screen and (min-width: 1024px) {

@@ -9,6 +9,21 @@
         margin: 15px 0px;
         align-self: flex-start;
     }
+
+    .social-logo-container {
+        height: 40px;
+        width: 40px;
+        border-radius: 50%;
+        background-color: $base-color;
+        display: flex;
+        align-items: center;
+        margin: 15px 10px;
+    }
+    
+
+    svg {
+        @include svg-base;
+    }
 }
 
 
@@ -20,20 +35,60 @@
         border: $border-style;
         border-radius: 7px;
         margin: 5px 0px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
     }
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
 }
+
+.social-name {
+    color: $base-color;
+    font-size: .8em;
+}
+.follower-count {
+    color: #777777;
+    font-size: 2em;
+}
+
 .new-members {
-    background-color: green;
     width: 100%;
+
+    .member-card > span:nth-of-type(2) {
+        color: $base-color;
+    }
 }
 .recent-activity {
-    background-color: blue;
     width: 100%;
 }
+
+.member-card {
+    width: 95%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 0px;
+
+    img {
+        height: 55px;
+        width: 55px;
+        border-radius: 50%;
+    }
+    span {
+        font-size: .7em;
+        text-align: center;
+    }
+
+    &:not(:last-child) {
+        border-bottom: $border-style;
+    }
+}
+
+
+
 
 @media screen and (min-width: 1024px) {
     .new-members,
