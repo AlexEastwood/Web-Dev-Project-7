@@ -1,0 +1,13 @@
+.alert {
+    background-color: $base-color;
+    height: 30px;
+    width: 95%;
+    margin: 20px auto 0 auto;
+    color: white;
+    font-size: .9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 10px;
+    border-radius: 5px;
+}

@@ -51,6 +51,10 @@
             <div class="tab">Dashboard</div>
             <div class="tabs-remainder"></div>
         </div>
+        <div class="alert" id="alert">
+            <span>Alert: You have unread messages</span>
+            <span id="hide-alert">&#10005</span>
+        </div>
         <section class="charts">
             <div class="line-container">
                 <div class="traffic-title">TRAFFIC</div>
@@ -161,7 +165,7 @@
         </section>
         <section class="forms">
             <div class="message-user">
-                <div class="message-user-title">RECENT ACTIVITY</div>
+                <div class="message-user-title">MESSAGE USER</div>
                 <form action="" method="post">
                     <input type="text" name="user" id="user" placeholder="Search for User">
                     <textarea name="message" id="message" placeholder="Message for User"></textarea>
@@ -173,11 +177,17 @@
                 <form action="" method="post">
                     <div class="setting-container">
                         <span>Send Email Notifications</span>
-                        <div class="slider-background"></div>
+                        <div class="slider-background">
+                            <span>ON</span>
+                            <div class="slider-toggle"></div>
+                        </div>
                     </div>
                     <div class="setting-container">
                         <span>Set Profile to Public</span>
-                        <div class="slider-background"></div>
+                        <div class="slider-background">
+                            <span>ON</span>
+                            <div class="slider-toggle"></div>
+                        </div>
                     </div>
                     <select name="Timezone" id="" placeholder="Select Timezone">
                         <option value=""selected hidden>Select Timezone</option>

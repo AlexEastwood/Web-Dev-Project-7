@@ -97,9 +97,22 @@
 .slider-background {
     height: 30px;
     width: 90px;
+    color: white;
     background-color: $base-color;
     border: $border-style;
     border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 5px;
+}
+
+.slider-toggle {
+    border: $border-style;
+    background-color: white;
+    height: 22px;
+    width: 22px;
+    border-radius: 50%;
 }
 
 @media screen and (min-width: 1024px) {

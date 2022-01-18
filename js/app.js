@@ -4,13 +4,22 @@ function trafficTimeframe() {
     for (let i=0; i<children.length; i++) {
         children[i].addEventListener("click", function(){
             for (let j=0; j<children.length; j++) {
-                children[j].style.backgroundColor = ""
-                children[j].style.color = ""
+                children[j].style.backgroundColor = "";
+                children[j].style.color = "";
             }
-            children[i].style.backgroundColor = "#81c98f"
-            children[i].style.color = "white"
+            children[i].style.backgroundColor = "#81c98f";
+            children[i].style.color = "white";
         }); 
     }
-}
+};
 
-trafficTimeframe()
+function hideAlert() {
+    const hideAlertButton = document.getElementById("hide-alert");
+    const alertDiv = document.getElementById("alert")
+    hideAlertButton.addEventListener("click", function(){
+        alertDiv.style.display = "none";
+    });
+};
+
+trafficTimeframe();
+hideAlert();

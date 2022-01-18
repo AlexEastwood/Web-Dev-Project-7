@@ -1,4 +1,8 @@
 @charset "UTF-8";
+.alert {
+  background-color: red;
+}
+
 /*! normalize.scss v0.1.0 | MIT License | based on git.io/normalize */
 /**
  * 1. Set default font family to sans-serif.
@@ -401,26 +405,16 @@ th {
   font-family: "Montserrat", sans-serif;
 }
 
-.alert {
-  background-color: #7477bf;
-  height: 30px;
-  width: 95%;
-  margin: 20px auto 0 auto;
-  color: white;
-  font-size: 0.9rem;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 10px;
-  border-radius: 5px;
-}
-
 html {
   box-sizing: border-box;
 }
 
 *, *:before, *:after {
   box-sizing: inherit;
+}
+
+.alert {
+  background-color: red;
 }
 
 body {
@@ -594,10 +588,6 @@ br {
   border-radius: 15px;
   padding: 5px;
   text-align: center;
-}
-.timeframe:first-of-type {
-  background-color: #81c98f;
-  color: white;
 }
 
 @media screen and (min-width: 768px) {
@@ -798,29 +788,16 @@ br {
   width: 45%;
   border: 1px solid lightgray;
   border-radius: 5px;
-  background-color: grey;
+  background-color: green;
   color: white;
 }
 
 .slider-background {
   height: 30px;
   width: 90px;
-  color: white;
   background-color: #7477bf;
   border: 1px solid lightgray;
   border-radius: 15px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0 5px;
-}
-
-.slider-toggle {
-  border: 1px solid lightgray;
-  background-color: white;
-  height: 22px;
-  width: 22px;
-  border-radius: 50%;
 }
 
 @media screen and (min-width: 1024px) {

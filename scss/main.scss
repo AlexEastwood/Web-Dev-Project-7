@@ -1,7 +1,9 @@
+@import "utilities/variables.scss";
+
 @import "base/normalize.scss";
 @import "base/typography.scss";
+@import "components/alerts.scss";
 @import "layout/page.scss";
 @import "layout/charts.scss";
 @import "layout/socials.scss";
 @import "layout/forms.scss";
-@import "utilities/variables.scss";
