@@ -75,10 +75,11 @@
         display: flex;
         justify-content: space-between;
         margin: 20px 0;
+
     }
 
     input[type="submit"] {
-        width: 45%;
+        width: 48%;
         border: $border-style;
         border-radius: 5px;
         background-color: $base-color;
@@ -86,7 +87,7 @@
     }
 
     input[type="button"] {
-        width: 45%;
+        width: 48%;
         border: $border-style;
         border-radius: 5px;
         background-color: grey;
@@ -115,9 +116,24 @@
     border-radius: 50%;
 }
 
+@media screen and (min-width: 768px) {
+    .setting-container {
+        width: 40%;
+    }
+}
+
+
 @media screen and (min-width: 1024px) {
     .message-user,
     .settings {
         width: 50%;
+    }
+
+    .message-user {
+        border-right: $border-style;
+    }
+
+    .setting-container {
+        width: 60%;
     }
 }

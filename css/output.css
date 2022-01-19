@@ -564,7 +564,7 @@ br {
   margin: 15px 0;
 }
 .charts [class*=-chart] {
-  max-width: 1000px;
+  max-width: 2000px;
   position: relative;
 }
 
@@ -685,8 +685,13 @@ br {
 .new-members {
   width: 100%;
 }
-.new-members .member-card > span:nth-of-type(2) {
+.new-members .info > span:nth-of-type(2) {
   color: #7477bf;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
 }
 
 .recent-activity {
@@ -713,10 +718,42 @@ br {
   border-bottom: 1px solid lightgray;
 }
 
+@media screen and (min-width: 768px) {
+  .social-stats {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  .social-stats [class*=-title] {
+    width: 100%;
+    margin-bottom: 0;
+  }
+  .social-stats [class*=-followers] {
+    width: 33%;
+  }
+
+  .member-card {
+    flex-direction: row;
+    width: 100%;
+  }
+  .member-card img {
+    margin-right: 10px;
+  }
+  .member-card span {
+    text-align: left;
+  }
+  .member-card .info {
+    flex-grow: 1;
+  }
+}
 @media screen and (min-width: 1024px) {
   .new-members,
 .recent-activity {
     width: 50%;
+  }
+
+  .new-members {
+    border-right: 1px solid lightgray;
   }
 }
 .forms {
@@ -788,14 +825,14 @@ br {
   margin: 20px 0;
 }
 .settings input[type=submit] {
-  width: 45%;
+  width: 48%;
   border: 1px solid lightgray;
   border-radius: 5px;
   background-color: #7477bf;
   color: white;
 }
 .settings input[type=button] {
-  width: 45%;
+  width: 48%;
   border: 1px solid lightgray;
   border-radius: 5px;
   background-color: grey;
@@ -823,10 +860,23 @@ br {
   border-radius: 50%;
 }
 
+@media screen and (min-width: 768px) {
+  .setting-container {
+    width: 40%;
+  }
+}
 @media screen and (min-width: 1024px) {
   .message-user,
 .settings {
     width: 50%;
+  }
+
+  .message-user {
+    border-right: 1px solid lightgray;
+  }
+
+  .setting-container {
+    width: 60%;
   }
 }
 

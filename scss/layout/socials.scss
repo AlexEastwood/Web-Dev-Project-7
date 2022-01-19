@@ -57,9 +57,16 @@
 .new-members {
     width: 100%;
 
-    .member-card > span:nth-of-type(2) {
+    .info > span:nth-of-type(2) {
         color: $base-color;
     }
+}
+
+.info {
+    display: flex;
+    flex-direction: column;
+
+    
 }
 .recent-activity {
     width: 100%;
@@ -87,12 +94,49 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .social-stats {
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
 
+        [class*="-title"] {
+            width: 100%;
+            margin-bottom: 0;
+        }
+
+        [class*="-followers"] {
+            width: 33%;
+        }
+    }
+
+    .member-card {
+        flex-direction: row;
+        width: 100%;
+
+        img {
+            margin-right: 10px;
+        }
+
+        span {
+            text-align: left;
+        }
+
+        .info {
+            flex-grow: 1;
+        }
+    }
+    
+}
 
 
 @media screen and (min-width: 1024px) {
     .new-members,
     .recent-activity {
         width: 50%;
+    }
+
+    .new-members {
+        border-right: $border-style;
     }
 }
