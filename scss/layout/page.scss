@@ -38,15 +38,13 @@ header {
     }
 
     .bell-container {
-        height: 30%;
+        height: 30px;
         margin-left: auto;
         width: auto;
         position: relative;
+        
 
-        svg {
-            height: 100%;
-            fill: white;
-        }
+        
         .notification  {
             position: absolute;
             top: -3px;
@@ -56,6 +54,10 @@ header {
             background: #66FF00;
           }
     }
+
+    
+
+    
 
     .vertical-line {
         height: 50%;
@@ -69,6 +71,33 @@ header {
         border-radius: 50%;
     }
 }
+
+.svg-bell-container {
+    height: 100%;
+
+    svg {
+        height: 30px;
+        fill: white;
+    }
+}
+
+.svg-bell-container:hover {
+    animation: rotation 1s infinite linear;
+
+    @keyframes rotation {
+        33% {
+            transform: rotate(45deg);
+        }
+        66% {
+            transform: rotate(-45deg);
+        }
+        100% {
+            transform: rotate(0deg);
+        }
+    }
+}
+
+
 nav {
     grid-area: nav;
     width: 100%;
@@ -78,7 +107,7 @@ nav {
     align-items: center;
     justify-content: center;
 
-    div {
+    .svg-container {
         height: 60%;
         margin: 0px 20px;
         svg {
@@ -141,7 +170,7 @@ br {
         flex-direction: column;
         justify-content: flex-start;
 
-        div {
+        .svg-container {
             height: auto;
             margin: 10px 
         }
