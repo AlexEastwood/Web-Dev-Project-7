@@ -1,143 +1,116 @@
 .socials {
-    & > div {
-        padding: 10px;
-        border-bottom: $border-style;
-    }
-
-    [class*="-title"] {
-        font-weight: 500;
-        margin: 15px 0px;
-        align-self: flex-start;
-    }
-
-    .social-logo-container {
-        height: 50px;
-        width: 50px;
-        border-radius: 50%;
-        background-color: $base-color;
-        display: flex;
-        align-items: center;
-        margin: 15px 10px;
-    }
-    
-
-    svg {
-        @include svg-base;
-    }
+	& > div {
+		padding: 10px;
+		border-bottom: $border-style;
+	}
+	[class*="-title"] {
+		font-weight: 500;
+		margin: 15px 0px;
+		align-self: flex-start;
+	}
+	.social-logo-container {
+		height: 50px;
+		width: 50px;
+		border-radius: 50%;
+		background-color: $base-color;
+		display: flex;
+		align-items: center;
+		margin: 15px 10px;
+	}
+	svg {
+		@include svg-base;
+	}
 }
-
-
 .social-stats {
-    [class*="-followers"] {
-        height: auto;
-        width: 100%;
-        background-color: #f5f5f5;
-        border: $border-style;
-        border-radius: 7px;
-        margin: 5px 0px;
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
-        padding: 10px;
-    }
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
+	[class*="-followers"] {
+		height: auto;
+		width: 100%;
+		background-color: #f5f5f5;
+		border: $border-style;
+		border-radius: 7px;
+		margin: 5px 0px;
+		display: flex;
+		justify-content: flex-start;
+		align-items: center;
+		padding: 10px;
+	}
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 }
-
 .social-name {
-    color: $base-color;
-    font-size: 1em;
+	color: $base-color;
+	font-size: 1em;
 }
 .follower-count {
-    color: #777777;
-    font-size: 3em;
+	color: #777777;
+	font-size: 3em;
 }
-
 .new-members {
-    width: 100%;
-
-    .info > span:nth-of-type(2) {
-        color: $base-color;
-    }
+	width: 100%;
+	.info > span:nth-of-type(2) {
+		color: $base-color;
+	}
 }
-
 .info {
-    display: flex;
-    flex-direction: column;
-
-    
+	display: flex;
+	flex-direction: column;
 }
 .recent-activity {
-    width: 100%;
+	width: 100%;
 }
-
 .member-card {
-    width: 95%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 20px 0px;
-
-    img {
-        height: 55px;
-        width: 55px;
-        border-radius: 50%;
-    }
-    span {
-        font-size: .7em;
-        text-align: center;
-    }
-
-    &:not(:last-child) {
-        border-bottom: $border-style;
-    }
+	width: 95%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0px;
+	img {
+		height: 55px;
+		width: 55px;
+		border-radius: 50%;
+	}
+	span {
+		font-size: .7em;
+		text-align: center;
+	}
+	&:not(:last-child) {
+		border-bottom: $border-style;
+	}
 }
-
 @media screen and (min-width: 768px) {
-    .social-stats {
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: space-between;
-
-        [class*="-title"] {
-            width: 100%;
-            margin-bottom: 0;
-        }
-
-        [class*="-followers"] {
-            width: 33%;
-        }
-    }
-
-    .member-card {
-        flex-direction: row;
-        width: 100%;
-
-        img {
-            margin-right: 10px;
-        }
-
-        span {
-            text-align: left;
-        }
-
-        .info {
-            flex-grow: 1;
-        }
-    }
-    
+	.social-stats {
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		[class*="-title"] {
+			width: 100%;
+			margin-bottom: 0;
+		}
+		[class*="-followers"] {
+			width: 33%;
+		}
+	}
+	.member-card {
+		flex-direction: row;
+		width: 100%;
+		img {
+			margin-right: 10px;
+		}
+		span {
+			text-align: left;
+		}
+		.info {
+			flex-grow: 1;
+		}
+	}
 }
-
-
 @media screen and (min-width: 1024px) {
-    .new-members,
-    .recent-activity {
-        width: 50%;
-    }
-
-    .new-members {
-        border-right: $border-style;
-    }
+	.new-members,.recent-activity {
+		width: 50%;
+	}
+	.new-members {
+		border-right: $border-style;
+	}
 }

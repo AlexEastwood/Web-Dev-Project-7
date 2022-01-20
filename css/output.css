@@ -625,8 +625,7 @@ br {
     flex-wrap: wrap;
   }
 
-  .bar-container,
-.donut-container {
+  .bar-container, .donut-container {
     width: 50%;
   }
 
@@ -767,8 +766,7 @@ br {
   }
 }
 @media screen and (min-width: 1024px) {
-  .new-members,
-.recent-activity {
+  .new-members, .recent-activity {
     width: 50%;
   }
 
@@ -807,8 +805,7 @@ br {
   background-color: #7477bf;
   color: white;
 }
-.message-user input[type=text],
-.message-user textarea {
+.message-user input[type=text], .message-user textarea {
   border: 1px solid lightgray;
   width: 100%;
   border-radius: 5px;
@@ -816,8 +813,7 @@ br {
   margin-bottom: 15px;
   padding: 5px;
 }
-.message-user input[type=text]::placeholder,
-.message-user textarea::placeholder {
+.message-user input[type=text]::placeholder, .message-user textarea::placeholder {
   color: #bcbcbc;
 }
 
@@ -887,8 +883,7 @@ br {
   }
 }
 @media screen and (min-width: 1024px) {
-  .message-user,
-.settings {
+  .message-user, .settings {
     width: 50%;
   }
 
